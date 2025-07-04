@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64981833-5B99-7FDF-6C62-7080A475D1E1" name="Kud">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 20:41:18 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdKud" id="95113765-DD36-02A6-1DE7-849C6071970A">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 20:41:31 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NazKud" id="60B7F5DA-E233-52CC-A67B-B9F9A1E75042">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 20:42:08 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AdrKud" id="BCC07271-1287-518C-78F2-7F0F544DF7D2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 20:42:36 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PostBrG" id="CBB233E5-47F5-88DE-C2CD-A6774826ADE1">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:20:38 UTC</createdTime>
+<generatorID>8251A8A1-1097-2172-EFB0-FBF012C90F56</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>D6DCC7E4-3A88-C653-CF91-12909BAAE998</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98351498-8C31-357E-FA0E-2D4D12382E85" name="Kud PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 20:42:06 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95113765-DD36-02A6-1DE7-849C6071970A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

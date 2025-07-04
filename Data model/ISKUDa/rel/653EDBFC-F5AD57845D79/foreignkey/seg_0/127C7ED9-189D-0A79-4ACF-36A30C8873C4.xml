@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="127C7ED9-189D-0A79-4ACF-36A30C8873C4" containerWithKeyObject="D4A2164E-D1C7-8A79-319A-CEF1E013B500" localFKIndex="3C40B080-AB33-3A40-E5CE-C0C026A27DB4" name="Kud_Grad_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>8251A8A1-1097-2172-EFB0-FBF012C90F56</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<referredTableLongName>Grad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2829604D-5A6A-32DB-9AA1-1B28B13AF5A4</referredTableID>
+<keyObject>5B4938A8-F6F0-C5C0-6C92-4A9536F7ED08</keyObject>
+<referredKeyID>5B4938A8-F6F0-C5C0-6C92-4A9536F7ED08</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PostBrG</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

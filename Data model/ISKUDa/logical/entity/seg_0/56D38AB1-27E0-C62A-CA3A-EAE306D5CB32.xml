@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56D38AB1-27E0-C62A-CA3A-EAE306D5CB32" name="Pozajmica">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:12:44 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DatP" id="E7E38BB5-1CAB-B5C6-F55A-E7D5410F57DF">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:12:59 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdN" id="CCF5DD9F-3759-01A9-97BF-D7930EFACEC8">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:13:36 UTC</createdTime>
+<generatorID>88EBA792-D977-BB5A-9CE9-FC7BB377EF46</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>AC64946A-2E1F-90AF-EBA7-4ED7FA66FCA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdC" id="1654E678-911B-3546-1843-31726CDF4601">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:14:17 UTC</createdTime>
+<generatorID>60950851-A3E5-7560-3F1D-55DCDF4BC92B</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>CC10628A-A105-0549-9063-DF6BE79FD06C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83A285CC-3414-28B5-3CEC-1364FF86FA83" name="Pozajmica PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:13:36 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CCF5DD9F-3759-01A9-97BF-D7930EFACEC8</attributeRef>
+<attributeRef>1654E678-911B-3546-1843-31726CDF4601</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC468EBC-1F4C-59AE-73A5-D009058BB722" name="Pozajmica">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>56D38AB1-27E0-C62A-CA3A-EAE306D5CB32</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DatP" id="2B1B6DE9-0EEB-8CDB-CDC0-06DA94EB6037">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>E7E38BB5-1CAB-B5C6-F55A-E7D5410F57DF</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nosnja_IdN" id="2734A474-8150-E091-DFC2-96C8FCBE626C">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>CCF5DD9F-3759-01A9-97BF-D7930EFACEC8</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCBD1440-4113-59B8-4ACB-F56C9850B2F1" referredColumn="EDC31A71-EBD5-B1F4-F730-739F0E2FF107"/>
+</associations>
+</Column>
+<Column name="Clan_IdC" id="22F72B4C-F4AA-C8E3-14EF-FE83D29DC826">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>1654E678-911B-3546-1843-31726CDF4601</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8235725D-40C0-D624-B185-EDB8046CD6F2" referredColumn="B1CC0202-C215-4CD0-6B4C-C338A6D40B2C"/>
+</associations>
+</Column>
+<Column name="Clan_JmbgC" id="B6EFDAC6-5C09-BD5E-062C-372DBB565C14">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>D2897F94-B457-6668-EA56-28FEB292EB76</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8235725D-40C0-D624-B185-EDB8046CD6F2" referredColumn="BFFB6215-D50C-E261-A6CD-83B9D0C2B304"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="039765F0-AEC2-5C70-1984-C01AFBB8D755" name="Pozajmica_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>83A285CC-3414-28B5-3CEC-1364FF86FA83</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2734A474-8150-E091-DFC2-96C8FCBE626C"/>
+<colUsage columnID="22F72B4C-F4AA-C8E3-14EF-FE83D29DC826"/>
+<colUsage columnID="B6EFDAC6-5C09-BD5E-062C-372DBB565C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DF8A5FB-C775-715C-F352-9A376F152596" name="Pozajmica_Nosnja_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>88EBA792-D977-BB5A-9CE9-FC7BB377EF46</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2734A474-8150-E091-DFC2-96C8FCBE626C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A066C1C7-7531-E987-56E6-1636C0F8A52F" name="Pozajmica_Clan_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>60950851-A3E5-7560-3F1D-55DCDF4BC92B</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22F72B4C-F4AA-C8E3-14EF-FE83D29DC826"/>
+<colUsage columnID="B6EFDAC6-5C09-BD5E-062C-372DBB565C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

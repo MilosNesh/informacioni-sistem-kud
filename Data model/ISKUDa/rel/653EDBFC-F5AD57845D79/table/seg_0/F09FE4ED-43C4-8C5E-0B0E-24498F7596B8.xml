@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F09FE4ED-43C4-8C5E-0B0E-24498F7596B8" name="OdrzavaSe">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>A1C9C4E6-5623-80FF-E616-666EA412540E</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Proba_IdP" id="8E01EE1F-40B8-C8CD-73EC-92276E220FCE">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>DD9B67A3-BBD1-B962-3281-632E3229F07A</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FD5F22A-455B-EF2B-0A62-6FB1C79D9587" referredColumn="A1F40861-CF8B-025E-CA95-E8D8195538D1"/>
+</associations>
+</Column>
+<Column name="Sekcija_IdS" id="390639F6-C71C-B0B1-419D-3258B2917D16">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>761A78D1-2C27-59E2-4F5F-6BB1CF18E9EE</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="039C515D-C420-604D-5D47-FD3AF6C5F9BB" referredColumn="104B43AF-0076-EABD-2763-3A59EA3B8645"/>
+</associations>
+</Column>
+<Column name="Sekcija_Kud_IdKud" id="05064E6B-9486-915C-50BC-55AFDB4EF717">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>9B899672-F64B-8889-55E3-3E13B74FD423</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="039C515D-C420-604D-5D47-FD3AF6C5F9BB" referredColumn="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43B3C196-C59C-3227-7147-6C497656D3B5" name="OdrzavaSe_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>E75CFE23-71E8-975B-5B6F-00FB91FD0C1B</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E01EE1F-40B8-C8CD-73EC-92276E220FCE"/>
+<colUsage columnID="390639F6-C71C-B0B1-419D-3258B2917D16"/>
+<colUsage columnID="05064E6B-9486-915C-50BC-55AFDB4EF717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9971379B-5D7E-6821-A708-0CF69D52FB64" name="OdrzavaSe__IDX">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4555D2DA-76EB-4BB7-3EE7-4DF59DE53BA7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8E01EE1F-40B8-C8CD-73EC-92276E220FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCC3D330-DA10-6174-A95E-BF986B66A9C1" name="OdrzavaSe_Proba_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>4555D2DA-76EB-4BB7-3EE7-4DF59DE53BA7</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E01EE1F-40B8-C8CD-73EC-92276E220FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60081D49-5309-7D4D-FD11-CCD5FA148B71" name="OdrzavaSe_Sekcija_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>020F34A9-8BF1-E029-52D3-7B87CE35B949</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="390639F6-C71C-B0B1-419D-3258B2917D16"/>
+<colUsage columnID="05064E6B-9486-915C-50BC-55AFDB4EF717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

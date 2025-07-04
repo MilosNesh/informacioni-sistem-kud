@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Placa" directorySegmentName="seg_0" id="A8442282-6A75-1A87-FB19-864F2624D0F3">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:07:13 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<sourcePk>B84EC9C3-5AB7-09F1-4AEB-53EEE14C0795</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AB4A2F5C-9019-235B-88E4-B8C2BEC5AAE6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FCAF0683-A031-E11D-4C9D-99F8C8C21F81</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

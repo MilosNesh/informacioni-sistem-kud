@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E8B9249F-9E88-9F8F-232D-D62EDA054AE2" name="Zaposleni">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:06:11 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>9AF81841-C9FE-EE7C-3CE7-C50AC6F6C7EB</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdZ" id="EC268BEF-46F8-4AF0-3E56-FC7FC44458B4">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:06:18 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ImeZ" id="93686218-3D42-1211-E3EF-5C77BFA9C061">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:06:33 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrezZ" id="CC75C4B1-B336-D80C-4E65-53DB73C51935">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:06:53 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="JmbgZ" id="D00C5409-176D-EAD2-3EB3-F0DB56D447D6">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:07:19 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TipZ" id="9AF81841-C9FE-EE7C-3CE7-C50AC6F6C7EB">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:11:17 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EBF13CD1-5A7A-B9CF-6E98-9F42F98663F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DatZapZ" id="7F964625-841B-49EC-E9E2-60261F172823">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:11:29 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BrTelZ" id="2FBA0098-4FD0-F14A-83AF-377A45D754E0">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:11:54 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdKud" id="F27F6AB4-A18B-994D-1ECF-23EF22B34642">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:26:32 UTC</createdTime>
+<generatorID>1074D30D-F171-CBDB-16FB-0364062B893A</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>95113765-DD36-02A6-1DE7-849C6071970A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="902A3A3C-CABE-68FC-E6BE-0F6CFF4FA4C2" name="Zaposleni PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:06:32 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>EC268BEF-46F8-4AF0-3E56-FC7FC44458B4</newElementsIDs>
+<usedAttributes>
+<attributeRef>EC268BEF-46F8-4AF0-3E56-FC7FC44458B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

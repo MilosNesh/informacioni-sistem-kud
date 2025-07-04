@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Za" directorySegmentName="seg_0" id="88EBA792-D977-BB5A-9CE9-FC7BB377EF46">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:13:36 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<sourcePk>78EA33E6-2B50-0FCD-653E-17650237211B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3DB38B23-0DE2-5806-10E8-23C5C168A40F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>56D38AB1-27E0-C62A-CA3A-EAE306D5CB32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

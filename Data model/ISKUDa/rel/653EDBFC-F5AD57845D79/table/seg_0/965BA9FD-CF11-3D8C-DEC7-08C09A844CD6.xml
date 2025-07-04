@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="965BA9FD-CF11-3D8C-DEC7-08C09A844CD6" name="Je">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>AE24078E-D099-DAE4-266F-A7DA0B386943</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clan_IdC" id="5A022D3A-B1D6-7548-EFED-F6E6F98A3BD2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>F66BA84C-C125-ECF7-2F52-E0F8D0B0D6C3</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2DD124F-2886-70A6-7088-48FFF81AF2FC" referredColumn="B1CC0202-C215-4CD0-6B4C-C338A6D40B2C"/>
+</associations>
+</Column>
+<Column name="Clan_JmbgC" id="A10293E6-0D28-78E9-520E-472F5F56A3C2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>1F45BBF3-B57E-58A8-A024-987DE04F926D</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2DD124F-2886-70A6-7088-48FFF81AF2FC" referredColumn="BFFB6215-D50C-E261-A6CD-83B9D0C2B304"/>
+</associations>
+</Column>
+<Column name="Sekcija_IdS" id="151DD4D4-13B3-EA33-4407-DD9020CC7546">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>9DEC4AED-8682-6E6B-BBD3-CA2E3D9A72D0</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD7063AD-51C9-AA72-3393-B9948F3B99D3" referredColumn="104B43AF-0076-EABD-2763-3A59EA3B8645"/>
+</associations>
+</Column>
+<Column name="Sekcija_Kud_IdKud" id="1C324069-05E9-7CA7-36C7-0D4FF543BA47">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>75061DC3-9AB1-AE11-226A-A4C2D4204CBC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD7063AD-51C9-AA72-3393-B9948F3B99D3" referredColumn="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1D4CBCF-06CA-2105-9F89-3912BDB1F741" name="Je_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>6A3B5A29-2C20-6BED-0B17-481EEDA07EFA</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A022D3A-B1D6-7548-EFED-F6E6F98A3BD2"/>
+<colUsage columnID="A10293E6-0D28-78E9-520E-472F5F56A3C2"/>
+<colUsage columnID="151DD4D4-13B3-EA33-4407-DD9020CC7546"/>
+<colUsage columnID="1C324069-05E9-7CA7-36C7-0D4FF543BA47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCE7BF3C-6623-B139-D843-319F6ADFEA92" name="Je_Clan_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>F7AAD8C0-19DF-F1C3-9C03-32FED3EE8772</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A022D3A-B1D6-7548-EFED-F6E6F98A3BD2"/>
+<colUsage columnID="A10293E6-0D28-78E9-520E-472F5F56A3C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81788FEE-D48F-8589-A546-942545256EC9" name="Je_Sekcija_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>48A9F660-6AF5-BB88-3661-F73CF8186EC9</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="151DD4D4-13B3-EA33-4407-DD9020CC7546"/>
+<colUsage columnID="1C324069-05E9-7CA7-36C7-0D4FF543BA47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

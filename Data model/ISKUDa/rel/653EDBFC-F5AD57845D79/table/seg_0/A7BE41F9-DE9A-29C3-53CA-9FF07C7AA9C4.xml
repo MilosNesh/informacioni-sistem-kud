@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7BE41F9-DE9A-29C3-53CA-9FF07C7AA9C4" name="Ide">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OdrzavaSe_IdP" id="EE946017-84AE-AF94-1DDA-7F5EABE563C2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BF38E1D-CC4C-C87B-4BAB-FB977E1291BD" referredColumn="8E01EE1F-40B8-C8CD-73EC-92276E220FCE"/>
+</associations>
+</Column>
+<Column name="OdrzavaSe_IdS" id="7FC55F44-9D7D-CE99-6678-00D2D4E734BF">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BF38E1D-CC4C-C87B-4BAB-FB977E1291BD" referredColumn="390639F6-C71C-B0B1-419D-3258B2917D16"/>
+</associations>
+</Column>
+<Column name="OdrzavaSe_IdKud" id="FF78647D-A6F3-B664-DAA9-15BED7581CCA">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BF38E1D-CC4C-C87B-4BAB-FB977E1291BD" referredColumn="05064E6B-9486-915C-50BC-55AFDB4EF717"/>
+</associations>
+</Column>
+<Column name="Je_IdC" id="ABD298FC-8C42-D6A8-4A91-3CBF9C1CAEA2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DCB318C-DE58-4127-FDFD-190F6B01FCCB" referredColumn="5A022D3A-B1D6-7548-EFED-F6E6F98A3BD2"/>
+</associations>
+</Column>
+<Column name="Je_JmbgC" id="3AB4A9C9-5BA6-C660-A6B5-5534F6A432AB">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DCB318C-DE58-4127-FDFD-190F6B01FCCB" referredColumn="A10293E6-0D28-78E9-520E-472F5F56A3C2"/>
+</associations>
+</Column>
+<Column name="Je_IdS" id="A04E24A6-62FA-993E-E913-8175DCD6B2C7">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DCB318C-DE58-4127-FDFD-190F6B01FCCB" referredColumn="151DD4D4-13B3-EA33-4407-DD9020CC7546"/>
+</associations>
+</Column>
+<Column name="Je_IdKud" id="8F5F70DF-3E8A-0139-F818-0FE3BE58AD6C">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DCB318C-DE58-4127-FDFD-190F6B01FCCB" referredColumn="1C324069-05E9-7CA7-36C7-0D4FF543BA47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14F6BF39-42AD-8101-E083-F20BCD14270B" name="Ide_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE946017-84AE-AF94-1DDA-7F5EABE563C2"/>
+<colUsage columnID="7FC55F44-9D7D-CE99-6678-00D2D4E734BF"/>
+<colUsage columnID="FF78647D-A6F3-B664-DAA9-15BED7581CCA"/>
+<colUsage columnID="ABD298FC-8C42-D6A8-4A91-3CBF9C1CAEA2"/>
+<colUsage columnID="3AB4A9C9-5BA6-C660-A6B5-5534F6A432AB"/>
+<colUsage columnID="A04E24A6-62FA-993E-E913-8175DCD6B2C7"/>
+<colUsage columnID="8F5F70DF-3E8A-0139-F818-0FE3BE58AD6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="575A7134-642E-6C26-5E84-4D970C559C3B" name="Ide_OdrzavaSe_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>0996FA60-4F17-CFD8-3126-AE840DE863BD</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE946017-84AE-AF94-1DDA-7F5EABE563C2"/>
+<colUsage columnID="7FC55F44-9D7D-CE99-6678-00D2D4E734BF"/>
+<colUsage columnID="FF78647D-A6F3-B664-DAA9-15BED7581CCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95E20987-80DE-B1F8-74EB-D94CF18B5CBD" name="Ide_Je_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>0996FA60-4F17-CFD8-3126-AE840DE863BD</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABD298FC-8C42-D6A8-4A91-3CBF9C1CAEA2"/>
+<colUsage columnID="3AB4A9C9-5BA6-C660-A6B5-5534F6A432AB"/>
+<colUsage columnID="A04E24A6-62FA-993E-E913-8175DCD6B2C7"/>
+<colUsage columnID="8F5F70DF-3E8A-0139-F818-0FE3BE58AD6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

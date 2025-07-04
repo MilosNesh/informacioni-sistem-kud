@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B3C636F-F14C-3DA7-6788-D7CE9F6EB2D5" containerWithKeyObject="513263D9-B9C7-1D83-8200-BA32370CAE0B" localFKIndex="AF5A3B6A-9791-9912-310B-F5CFCF893B34" name="Koreograf_Sekcija_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<referredTableLongName>Sekcija</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99D3E670-ED2B-1168-9724-CFF465F5C897</referredTableID>
+<keyObject>214C7522-69AE-D5A9-35C8-90FD63D6E3A6</keyObject>
+<referredKeyID>214C7522-69AE-D5A9-35C8-90FD63D6E3A6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>IdS,Kud_IdKud</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

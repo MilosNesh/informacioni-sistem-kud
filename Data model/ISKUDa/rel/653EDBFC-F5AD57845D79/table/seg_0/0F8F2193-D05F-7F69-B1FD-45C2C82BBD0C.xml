@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F8F2193-D05F-7F69-B1FD-45C2C82BBD0C" name="Zaposleni">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>E8B9249F-9E88-9F8F-232D-D62EDA054AE2</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdZ" id="C4BFA10A-DDD0-8D2D-F13B-FA0ACBA2CA51">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>EC268BEF-46F8-4AF0-3E56-FC7FC44458B4</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ImeZ" id="E794FFC1-5B15-9798-EEFD-D3D93C63A62D">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>93686218-3D42-1211-E3EF-5C77BFA9C061</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrezZ" id="390CBDD9-1C96-10B9-F17C-9AD640C63BE4">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>CC75C4B1-B336-D80C-4E65-53DB73C51935</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JmbgZ" id="B325E09B-3906-7779-7164-AE39B1C4EE35">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>D00C5409-176D-EAD2-3EB3-F0DB56D447D6</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipZ" id="78B6D7C1-94A2-C62C-5D20-DBB2C8A7398C">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>9AF81841-C9FE-EE7C-3CE7-C50AC6F6C7EB</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<constraintName>CH_INH_Zaposleni</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>EBF13CD1-5A7A-B9CF-6E98-9F42F98663F0</domain>
+<listOfValues>
+<valueDef value="&apos;Koreograf&apos;" description="entity Koreograf"/>
+<valueDef value="&apos;Predsjednik&apos;" description="entity Predsjednik"/>
+<valueDef value="&apos;Sekretar&apos;" description="entity Sekretar"/>
+</listOfValues>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="DatZapZ" id="A2549C92-AB76-28F3-1254-9C1FD3760603">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>7F964625-841B-49EC-E9E2-60261F172823</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BrTelZ" id="A5FCD055-4CD8-37FB-2EE3-DF55692D10AE">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>2FBA0098-4FD0-F14A-83AF-377A45D754E0</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kud_IdKud" id="8A0EF98C-B652-8D10-5921-B06FE4CBE508">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>F27F6AB4-A18B-994D-1ECF-23EF22B34642</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76F8464C-A559-C2C7-EEF8-177F31EDEC53" referredColumn="392EB2E9-392F-368E-5EB3-95A35A86D8D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63BA9BAB-964A-7500-032E-29C928AE6EBF" name="Zaposleni_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>902A3A3C-CABE-68FC-E6BE-0F6CFF4FA4C2</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4BFA10A-DDD0-8D2D-F13B-FA0ACBA2CA51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CBEE033-6C79-51B1-295B-187E5C59B96F" name="Zaposleni_Kud_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>1074D30D-F171-CBDB-16FB-0364062B893A</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0EF98C-B652-8D10-5921-B06FE4CBE508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

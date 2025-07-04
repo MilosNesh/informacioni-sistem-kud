@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCAF0683-A031-E11D-4C9D-99F8C8C21F81" name="Clanarina">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:04:10 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdCl" id="ECB1911F-00DE-CACC-CD65-1C04E05CBEDF">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:04:18 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IznCl" id="AE2C8B45-50ED-C99B-32A3-3EB6B90D0250">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:04:37 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DatPlCl" id="835E4A2A-DBFE-4C2E-8E3C-CF86D1AC73AC">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:04:51 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdC" id="378A15A9-9346-8F5F-EB52-0325619196E7">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:07:13 UTC</createdTime>
+<generatorID>A8442282-6A75-1A87-FB19-864F2624D0F3</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>CC10628A-A105-0549-9063-DF6BE79FD06C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdZ" id="5444F4BF-959B-29E6-CBE9-33B71F3B0DE2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:16:39 UTC</createdTime>
+<generatorID>A6DF7933-4396-C51D-E9B7-AD982886BE20</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>EC268BEF-46F8-4AF0-3E56-FC7FC44458B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9E4F489-680D-C2BB-5A92-54E3C8E575E6" name="Clanarina PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:04:35 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ECB1911F-00DE-CACC-CD65-1C04E05CBEDF</attributeRef>
+<attributeRef>378A15A9-9346-8F5F-EB52-0325619196E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

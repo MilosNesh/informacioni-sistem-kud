@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC660670-0663-0755-6B45-CB828B7CA8F9" name="Clanarina">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>FCAF0683-A031-E11D-4C9D-99F8C8C21F81</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdCl" id="F84B0FE3-60DC-790B-5A86-367DE6A9C6FC">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>ECB1911F-00DE-CACC-CD65-1C04E05CBEDF</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IznCl" id="B9FF4D81-AE67-336B-ABD9-32D83AEFEAF2">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>AE2C8B45-50ED-C99B-32A3-3EB6B90D0250</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DatPlCl" id="83ABDF7E-27E0-3C56-0C96-169D62DC8442">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>835E4A2A-DBFE-4C2E-8E3C-CF86D1AC73AC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clan_IdC" id="B1A01625-6F24-C8C4-575B-5368318D9382">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>378A15A9-9346-8F5F-EB52-0325619196E7</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E66EA88-6D5C-7423-DEFA-A8C74BDAAD41" referredColumn="B1CC0202-C215-4CD0-6B4C-C338A6D40B2C"/>
+</associations>
+</Column>
+<Column name="Clan_JmbgC" id="FF125217-297A-023C-F6F7-8A91E7E2A2A9">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>27045986-BB88-3CDA-6AF9-C27C8252D95C</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E66EA88-6D5C-7423-DEFA-A8C74BDAAD41" referredColumn="BFFB6215-D50C-E261-A6CD-83B9D0C2B304"/>
+</associations>
+</Column>
+<Column name="Sekretar_IdZ" id="D8EBB34C-BA3D-D49C-1E99-7C68B22771BD">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>5444F4BF-959B-29E6-CBE9-33B71F3B0DE2</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD218701-4CDE-BE4F-2AEF-ABF1EDC7F2C2" referredColumn="435F6CDD-14F8-65E1-68AA-494F82CAF48C"/>
+</associations>
+</Column>
+<Column name="Sekretar_JmbgZ" id="DEEE8341-E956-321B-A46A-2E3D808B56C9">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>42E33F1C-86B0-0036-5FF5-79BEC45FF297</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD218701-4CDE-BE4F-2AEF-ABF1EDC7F2C2" referredColumn="DC8EA51F-F538-2E0F-5753-895EAFA700A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="215EC965-0ACA-000C-15E5-CCA29364E2E4" name="Clanarina_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>E9E4F489-680D-C2BB-5A92-54E3C8E575E6</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F84B0FE3-60DC-790B-5A86-367DE6A9C6FC"/>
+<colUsage columnID="B1A01625-6F24-C8C4-575B-5368318D9382"/>
+<colUsage columnID="FF125217-297A-023C-F6F7-8A91E7E2A2A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8FEC9C9-F45F-CCC9-AAF8-38729BF2665B" name="Clanarina_Sekretar_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>A6DF7933-4396-C51D-E9B7-AD982886BE20</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8EBB34C-BA3D-D49C-1E99-7C68B22771BD"/>
+<colUsage columnID="DEEE8341-E956-321B-A46A-2E3D808B56C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA286C92-90DA-AF3B-4305-F21DCA7C8461" name="Clanarina_Clan_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>A8442282-6A75-1A87-FB19-864F2624D0F3</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1A01625-6F24-C8C4-575B-5368318D9382"/>
+<colUsage columnID="FF125217-297A-023C-F6F7-8A91E7E2A2A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

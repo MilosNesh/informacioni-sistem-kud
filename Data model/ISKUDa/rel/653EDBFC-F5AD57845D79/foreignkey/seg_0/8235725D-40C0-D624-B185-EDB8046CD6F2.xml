@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8235725D-40C0-D624-B185-EDB8046CD6F2" containerWithKeyObject="CC468EBC-1F4C-59AE-73A5-D009058BB722" localFKIndex="A066C1C7-7531-E987-56E6-1636C0F8A52F" name="Pozajmica_Clan_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>60950851-A3E5-7560-3F1D-55DCDF4BC92B</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<referredTableLongName>Clan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C7062E98-0E65-94E3-CD22-B9B22851F688</referredTableID>
+<keyObject>FE1EC716-4044-9FE1-35BD-3792068FA2C5</keyObject>
+<referredKeyID>FE1EC716-4044-9FE1-35BD-3792068FA2C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IdC,JmbgC</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

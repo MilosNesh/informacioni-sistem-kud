@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vodi" directorySegmentName="seg_0" id="FA89A946-C43C-B15C-0854-D49B69A7B0DC">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 21:42:45 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<sourcePk>927293C3-4C08-EC17-5B87-E3B9AA70E2C0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EF739890-5DB2-C9B7-C56A-B51BCD83F139</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98C87628-A3C8-D9F7-B1FC-B11B0EA40FD9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

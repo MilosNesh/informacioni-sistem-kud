@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE24078E-D099-DAE4-266F-A7DA0B386943" name="Je">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:04:59 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdC" id="F66BA84C-C125-ECF7-2F52-E0F8D0B0D6C3">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:05:17 UTC</createdTime>
+<generatorID>F7AAD8C0-19DF-F1C3-9C03-32FED3EE8772</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>CC10628A-A105-0549-9063-DF6BE79FD06C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdS" id="9DEC4AED-8682-6E6B-BBD3-CA2E3D9A72D0">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:17:58 UTC</createdTime>
+<generatorID>48A9F660-6AF5-BB88-3661-F73CF8186EC9</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>FFB0FFC4-9011-4F55-43EF-26800B07F9E3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdKud" id="75061DC3-9AB1-AE11-226A-A4C2D4204CBC">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:17:58 UTC</createdTime>
+<generatorID>48A9F660-6AF5-BB88-3661-F73CF8186EC9</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>C29E03A3-6A29-D5D6-6AF8-9E4B917BF90E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6A3B5A29-2C20-6BED-0B17-481EEDA07EFA" name="Je PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:05:17 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F66BA84C-C125-ECF7-2F52-E0F8D0B0D6C3</attributeRef>
+<attributeRef>9DEC4AED-8682-6E6B-BBD3-CA2E3D9A72D0</attributeRef>
+<attributeRef>75061DC3-9AB1-AE11-226A-A4C2D4204CBC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

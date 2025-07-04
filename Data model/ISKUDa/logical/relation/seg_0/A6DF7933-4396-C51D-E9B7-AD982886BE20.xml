@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Evedentira" directorySegmentName="seg_0" id="A6DF7933-4396-C51D-E9B7-AD982886BE20">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:15:10 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<sourcePk>902A3A3C-CABE-68FC-E6BE-0F6CFF4FA4C2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5789342D-744E-5A3E-8181-6192490F7402</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FCAF0683-A031-E11D-4C9D-99F8C8C21F81</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

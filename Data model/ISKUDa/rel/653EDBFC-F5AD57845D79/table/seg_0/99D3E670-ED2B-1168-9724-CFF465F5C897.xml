@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99D3E670-ED2B-1168-9724-CFF465F5C897" name="Sekcija">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>EF739890-5DB2-C9B7-C56A-B51BCD83F139</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdS" id="104B43AF-0076-EABD-2763-3A59EA3B8645">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>FFB0FFC4-9011-4F55-43EF-26800B07F9E3</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NazS" id="297F26CD-DDB1-158C-2F2E-5A69B922B50E">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>02109F48-E836-EAA3-E92C-AFAFA00847DD</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipS" id="825FF285-C679-7918-23B6-3240EDC4B868">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>C4CCEF00-29A3-D481-7B9B-C3546FA54B4E</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FEC7FF59-A36A-4285-64D5-5E89B479A471</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kud_IdKud" id="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>C29E03A3-6A29-D5D6-6AF8-9E4B917BF90E</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65DAAF66-7C6E-ED43-94A6-16F244567E37" referredColumn="392EB2E9-392F-368E-5EB3-95A35A86D8D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="214C7522-69AE-D5A9-35C8-90FD63D6E3A6" name="Sekcija_PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>927293C3-4C08-EC17-5B87-E3B9AA70E2C0</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="104B43AF-0076-EABD-2763-3A59EA3B8645"/>
+<colUsage columnID="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="121085CA-8D12-1013-2BD0-550A8F6B8F21" name="Sekcija_Kud_FK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:23:16 UTC</createdTime>
+<generatorID>2C0F150C-E1DD-C621-04E5-E9D10C69CC96</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

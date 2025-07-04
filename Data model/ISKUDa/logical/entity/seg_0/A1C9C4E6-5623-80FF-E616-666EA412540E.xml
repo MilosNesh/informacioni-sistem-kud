@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A1C9C4E6-5623-80FF-E616-666EA412540E" name="OdrzavaSe">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:01:23 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdP" id="DD9B67A3-BBD1-B962-3281-632E3229F07A">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:03:24 UTC</createdTime>
+<generatorID>4555D2DA-76EB-4BB7-3EE7-4DF59DE53BA7</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>E651F357-A70D-9CAA-79B0-17028217A915</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdS" id="761A78D1-2C27-59E2-4F5F-6BB1CF18E9EE">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:04:07 UTC</createdTime>
+<generatorID>020F34A9-8BF1-E029-52D3-7B87CE35B949</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>FFB0FFC4-9011-4F55-43EF-26800B07F9E3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdKud" id="9B899672-F64B-8889-55E3-3E13B74FD423">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:04:07 UTC</createdTime>
+<generatorID>020F34A9-8BF1-E029-52D3-7B87CE35B949</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<referedAttribute>C29E03A3-6A29-D5D6-6AF8-9E4B917BF90E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E75CFE23-71E8-975B-5B6F-00FB91FD0C1B" name="OdrzavaSe PK">
+<createdBy>PC</createdBy>
+<createdTime>2024-12-28 22:03:24 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<engineerTo>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD9B67A3-BBD1-B962-3281-632E3229F07A</attributeRef>
+<attributeRef>761A78D1-2C27-59E2-4F5F-6BB1CF18E9EE</attributeRef>
+<attributeRef>9B899672-F64B-8889-55E3-3E13B74FD423</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
