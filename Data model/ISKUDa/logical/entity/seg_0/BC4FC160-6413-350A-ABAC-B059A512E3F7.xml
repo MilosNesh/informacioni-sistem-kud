@@ -50,8 +50,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -59,8 +60,9 @@
 <createdBy>PC</createdBy>
 <createdTime>2024-12-28 20:47:30 UTC</createdTime>
 <ownerDesignName>ISKUDa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
+<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

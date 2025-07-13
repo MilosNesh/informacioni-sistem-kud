@@ -17,36 +17,6 @@
 <normalForm>Third</normalForm>
 <discriminatorValue>&apos;Koreograf&apos;</discriminatorValue>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="IdS" id="8AC5949A-2F3E-4663-3199-BD85C2A6D492">
-<createdBy>PC</createdBy>
-<createdTime>2024-12-28 21:42:45 UTC</createdTime>
-<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
-<ownerDesignName>ISKUDa</ownerDesignName>
-<engineerTo>
-<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>FFB0FFC4-9011-4F55-43EF-26800B07F9E3</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="IdKud" id="5250A48E-CEA2-4873-17C0-854115E0D20B">
-<createdBy>PC</createdBy>
-<createdTime>2024-12-28 21:42:45 UTC</createdTime>
-<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
-<ownerDesignName>ISKUDa</ownerDesignName>
-<engineerTo>
-<item key="653EDBFC-5474-957D-396E-F5AD57845D79" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>C29E03A3-6A29-D5D6-6AF8-9E4B917BF90E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="IdZ" id="1F32A38F-B62C-6AA0-1153-540BB495A845">
 <createdBy>PC</createdBy>
 <createdTime>2024-12-30 10:40:00 UTC</createdTime>

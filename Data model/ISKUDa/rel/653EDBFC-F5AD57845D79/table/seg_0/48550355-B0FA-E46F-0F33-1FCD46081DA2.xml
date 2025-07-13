@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48550355-B0FA-E46F-0F33-1FCD46081DA2" name="Vodi">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Sekcija_IdS" id="D5DFBCC9-C787-5056-858F-E6085FD4F58C">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80C83A79-E2CC-B417-094B-7CA7FF61F8BF" referredColumn="104B43AF-0076-EABD-2763-3A59EA3B8645"/>
+</associations>
+</Column>
+<Column name="Sekcija_Kud_IdKud" id="D25252EE-4BBF-07D7-DC8B-340B2E2B5085">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80C83A79-E2CC-B417-094B-7CA7FF61F8BF" referredColumn="A985EFC7-8C97-D66D-B2E8-C3A9DFD3870D"/>
+</associations>
+</Column>
+<Column name="Koreograf_IdZ" id="3D8D1499-83AD-5277-FEA8-155E4C3D8414">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C94587B9-CB86-1C9B-0D4D-0F43AAD201A9" referredColumn="B9E2AC65-31DA-81AA-7C87-260AFD918F77"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFC36627-22A7-8984-8F51-6B93DDB3BED7" name="Vodi_PK">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5DFBCC9-C787-5056-858F-E6085FD4F58C"/>
+<colUsage columnID="D25252EE-4BBF-07D7-DC8B-340B2E2B5085"/>
+<colUsage columnID="3D8D1499-83AD-5277-FEA8-155E4C3D8414"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C47FF8A-09FE-1B67-E18F-EE7DA17F93BE" name="Vodi_Sekcija_FK">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5DFBCC9-C787-5056-858F-E6085FD4F58C"/>
+<colUsage columnID="D25252EE-4BBF-07D7-DC8B-340B2E2B5085"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7058CB3-0474-811B-A13F-43D53950082C" name="Vodi_Koreograf_FK">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D8D1499-83AD-5277-FEA8-155E4C3D8414"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

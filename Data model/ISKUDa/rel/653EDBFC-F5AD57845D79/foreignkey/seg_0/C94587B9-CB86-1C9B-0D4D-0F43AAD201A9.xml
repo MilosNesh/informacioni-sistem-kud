@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C94587B9-CB86-1C9B-0D4D-0F43AAD201A9" containerWithKeyObject="48550355-B0FA-E46F-0F33-1FCD46081DA2" localFKIndex="C7058CB3-0474-811B-A13F-43D53950082C" name="Vodi_Koreograf_FK">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-10 12:27:25 UTC</createdTime>
+<generatorID>FA89A946-C43C-B15C-0854-D49B69A7B0DC</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<referredTableLongName>Koreograf</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>513263D9-B9C7-1D83-8200-BA32370CAE0B</referredTableID>
+<keyObject>AD641472-B5E7-0E66-5B46-ABF357FF971B</keyObject>
+<referredKeyID>AD641472-B5E7-0E66-5B46-ABF357FF971B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IdZ</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

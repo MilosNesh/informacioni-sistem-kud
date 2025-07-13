@@ -50,6 +50,7 @@
 <createdTime>2024-12-28 22:23:16 UTC</createdTime>
 <generatorID>E3CEAC6F-8D00-179D-2163-3190E03D9CDB</generatorID>
 <ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -91,6 +92,18 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PolC" id="789E1ABD-B130-A628-F4F3-6C727ABCEB0E">
+<createdBy>PC</createdBy>
+<createdTime>2025-07-12 15:45:59 UTC</createdTime>
+<generatorID>02A4DE8E-7B28-B5C6-2A79-283A4F23A961</generatorID>
+<ownerDesignName>ISKUDa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A2F857FD-5502-6FA7-61D6-F3CBAE650E9B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
