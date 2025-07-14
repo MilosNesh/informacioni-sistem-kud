@@ -29,4 +29,8 @@ public class ZaposleniService {
 	public ArrayList<Zaposleni> getAllByKudId(Integer id) throws SQLException {
 		return (ArrayList<Zaposleni>) zaposleniDao.findAllByKudId(id);
 	}
+	
+	public Zaposleni getByImeAndPrezime(String ime, String prezime) throws SQLException {
+		return zaposleniDao.findByImeAndPrezime(ime, prezime);
+	}
 }

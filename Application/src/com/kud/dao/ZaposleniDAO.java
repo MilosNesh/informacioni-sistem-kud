@@ -6,4 +6,5 @@ import com.kud.model.Zaposleni;
 
 public interface ZaposleniDAO extends CRUDDAO<Zaposleni, Integer> {
 	public Iterable<Zaposleni> findAllByKudId(Integer id)  throws SQLException;
+	public Zaposleni findByImeAndPrezime(String ime, String prezime) throws SQLException;
 }
