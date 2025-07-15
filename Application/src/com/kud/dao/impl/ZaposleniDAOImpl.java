@@ -155,7 +155,7 @@ public class ZaposleniDAOImpl implements ZaposleniDAO{
 
 	@Override
 	public Zaposleni findByImeAndPrezime(String ime, String prezime) throws SQLException {
-		String query = "select idz, imez, prezz, jmbgz, tipz, datzapz, brtelz, kud_idkud from zaposleni where imez = ? and prezz = ? and tipz = 'Sekretar'";
+		String query = "select idz, imez, prezz, jmbgz, tipz, datzapz, brtelz, kud_idkud from zaposleni where imez = ? and prezz = ?";
 		Zaposleni zaposleni = null;
 		
 		try(Connection connection = ConnectionUtil_HikariCP.getConnection();
@@ -163,6 +163,28 @@ public class ZaposleniDAOImpl implements ZaposleniDAO{
 			
 			preparedStatement.setString(1, ime);
 			preparedStatement.setString(2, prezime);
+			
+			try(ResultSet resultSet = preparedStatement.executeQuery()){
+				if(resultSet.isBeforeFirst()) {
+					resultSet.next();
+					zaposleni = new Zaposleni(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), TipZaposlenog.valueOf(resultSet.getString(5)), resultSet.getDate(6), resultSet.getString(7), resultSet.getInt(8));
+				}
+			}
+		}
+		return zaposleni;
+	}
+
+	@Override
+	public Zaposleni findByImeAndPrezimeAndTip(String ime, String prezime, String tip) throws SQLException {
+		String query = "select idz, imez, prezz, jmbgz, tipz, datzapz, brtelz, kud_idkud from zaposleni where imez = ? and prezz = ? and tipz = ?";
+		Zaposleni zaposleni = null;
+		
+		try(Connection connection = ConnectionUtil_HikariCP.getConnection();
+ 				PreparedStatement preparedStatement = connection.prepareStatement(query);) {
+			
+			preparedStatement.setString(1, ime);
+			preparedStatement.setString(2, prezime);
+			preparedStatement.setString(3, tip);
 			
 			try(ResultSet resultSet = preparedStatement.executeQuery()){
 				if(resultSet.isBeforeFirst()) {

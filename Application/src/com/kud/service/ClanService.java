@@ -28,4 +28,8 @@ public class ClanService {
 	public boolean register(Clan clan, Sekcija sekcija) throws SQLException {
 		return clanDao.register(clan, sekcija);
 	}
+	
+	public Clan getByIdAndKudId(Integer id, Integer kudId) throws SQLException {
+		return clanDao.findByIdAndKudId(id, kudId);
+	}
 }

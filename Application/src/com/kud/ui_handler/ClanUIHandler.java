@@ -16,7 +16,7 @@ public class ClanUIHandler {
 	private static final SekcijaService sekcijaService = new SekcijaService();
 	private static final ZaposleniService zaposleniService = new ZaposleniService();
 	
-	public Zaposleni sekretar;
+	public Zaposleni zaposleni;
 	
 	public void handleClanMenu() {
 		login();
@@ -55,26 +55,26 @@ public class ClanUIHandler {
 				break;
 			}
 
-		} while (!answer.equalsIgnoreCase("X") && sekretar != null);
+		} while (!answer.equalsIgnoreCase("X") && zaposleni != null);
 	}
 	
 	private void login() {
 		do {			
-			System.out.println("Unesite ime sekretara: ");
+			System.out.println("Unesite ime zaposleng: ");
 			String ime = MainUIHandler.sc.nextLine();
 			
-			System.out.println("Unesite prezime sekretara: ");
+			System.out.println("Unesite prezime zaposlenog: ");
 			String prezime = MainUIHandler.sc.nextLine();
 			
 			try {
-				sekretar = zaposleniService.getByImeAndPrezime(ime, prezime);
-				if (sekretar == null) {
+				zaposleni = zaposleniService.getByImeAndPrezime(ime, prezime);
+				if (zaposleni == null) {
 					System.out.println("Losi kredencijali pokusaj ponovo.");
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} while (sekretar == null);
+		} while (zaposleni == null);
 	}
 	
 	private void showAll() {
@@ -82,7 +82,7 @@ public class ClanUIHandler {
 		System.out.println("----------------------------------------------------------------------------------------------------------------------------------");
 
 		try {
-			for (Clan clan : clanService.getAllByKud(sekretar.getKud())) {
+			for (Clan clan : clanService.getAllByKud(zaposleni.getKud())) {
 				System.out.println(clan);
 			}
 		} catch (SQLException e) {
@@ -108,7 +108,7 @@ public class ClanUIHandler {
 		System.out.println("----------------------------------------------------------------------------------------------------------------------------------");
 
 		try {
-			for (Clan clan : clanService.getAllByKudAndSekcija(sekretar.getKud(), tip)) {
+			for (Clan clan : clanService.getAllByKudAndSekcija(zaposleni.getKud(), tip)) {
 				System.out.println(clan);
 			}
 		} catch (SQLException e) {
@@ -150,7 +150,7 @@ public class ClanUIHandler {
 				else
 					tips = TipSekcije.valueOf(tip);
 				
-				sekcija = sekcijaService.getByTipAndKudId(tips, sekretar.getKud());
+				sekcija = sekcijaService.getByTipAndKudId(tips, zaposleni.getKud());
 				
 				if (sekcija == null)
 					System.out.println("Izabrana sekvcija ne postoji u Vasem kudu.");

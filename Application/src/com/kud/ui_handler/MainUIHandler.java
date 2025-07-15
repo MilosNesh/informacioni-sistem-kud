@@ -7,6 +7,8 @@ public class MainUIHandler {
 	private static final KudUIHandler kudUIHandler = new KudUIHandler();
 	private static final ZaposleniUIHandler zaposleniUIHandler = new ZaposleniUIHandler();
 	private static final ClanUIHandler clanUIHandler = new ClanUIHandler();
+	private static final ClanarinaUIHandler clanarinaUIHandler = new ClanarinaUIHandler();
+	
 	public void handleMainMenu() {
 
 		String answer;
@@ -15,6 +17,7 @@ public class MainUIHandler {
 			System.out.println("1 - Rukovanje kudovima");
 			System.out.println("2 - Rukovanje zaposlenima");
 			System.out.println("3 - Rukovanje clanovima");
+			System.out.println("4 - Rukovanje clanarinama");
 			System.out.println("X - Izlazak iz programa");
 
 			answer = sc.nextLine();
@@ -28,6 +31,9 @@ public class MainUIHandler {
 				break;
 			case "3":
 				clanUIHandler.handleClanMenu();
+				break;
+			case "4":
+				clanarinaUIHandler.handleClanarinaMenu();
 				break;
 			}
 

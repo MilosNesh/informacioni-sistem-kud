@@ -181,4 +181,26 @@ public class ClanDAOImpl implements ClanDAO {
 	
 	}
 
+	@Override
+	public Clan findByIdAndKudId(Integer id, Integer kudId) throws SQLException {
+		String query = "select idc, imec, prezc, jmbgc, brtelc, datrodjc, datupc, polc from clan c, je j, sekcija s where c.idc = j.clan_idc and s.ids = j.sekcija_ids and s.kud_idkud = ? and c.idc = ?";
+		Clan clan = null;
+ 		try(Connection connection = ConnectionUtil_HikariCP.getConnection();
+ 				PreparedStatement preparedStatement = connection.prepareStatement(query)){
+ 			
+ 			preparedStatement.setInt(1, kudId);
+ 			preparedStatement.setInt(2, id);
+ 			
+ 			try (ResultSet resultSet = preparedStatement.executeQuery()){
+
+	 			if (resultSet.isBeforeFirst()) {
+	 				resultSet.next();
+	 				clan = new Clan(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getDate(6), resultSet.getDate(7), PolClana.valueOf(resultSet.getString(8)));
+	 	
+	 			}
+ 			}
+ 			}
+		return clan;
+	}
+
 }

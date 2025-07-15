@@ -33,4 +33,8 @@ public class ZaposleniService {
 	public Zaposleni getByImeAndPrezime(String ime, String prezime) throws SQLException {
 		return zaposleniDao.findByImeAndPrezime(ime, prezime);
 	}
+	
+	public Zaposleni getByImeAndPrezimeAndTip(String ime, String prezime, String tip) throws SQLException {
+		return zaposleniDao.findByImeAndPrezimeAndTip(ime, prezime, tip);
+	}
 }

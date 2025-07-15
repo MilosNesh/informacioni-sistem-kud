@@ -4,19 +4,19 @@ import java.sql.Date;
 
 public class Clanarina {
 	private int id;
-	private double iznos;
+	private int iznos;
 	private Date datumPlacanja;
 	private int idClana;
 	private String jmbgClana;
 	private int idSekretara;
-	private String jmngSekretara;
+	private String jmbgSekretara;
 	
 	public Clanarina() {
 		
 	}
 	
-	public Clanarina(int id, double iznos, Date datumPlacanja, int idClana, String jmbgClana, int idSekretara,
-			String jmngSekretara) {
+	public Clanarina(int id, int iznos, Date datumPlacanja, int idClana, String jmbgClana, int idSekretara,
+			String jmbgSekretara) {
 		super();
 		this.id = id;
 		this.iznos = iznos;
@@ -24,7 +24,7 @@ public class Clanarina {
 		this.idClana = idClana;
 		this.jmbgClana = jmbgClana;
 		this.idSekretara = idSekretara;
-		this.jmngSekretara = jmngSekretara;
+		this.jmbgSekretara = jmbgSekretara;
 	}
 
 	public int getId() {
@@ -35,11 +35,11 @@ public class Clanarina {
 		this.id = id;
 	}
 
-	public double getIznos() {
+	public int getIznos() {
 		return iznos;
 	}
 
-	public void setIznos(double iznos) {
+	public void setIznos(int iznos) {
 		this.iznos = iznos;
 	}
 
@@ -75,12 +75,12 @@ public class Clanarina {
 		this.idSekretara = idSekretara;
 	}
 
-	public String getJmngSekretara() {
-		return jmngSekretara;
+	public String getJmbgSekretara() {
+		return jmbgSekretara;
 	}
 
-	public void setJmngSekretara(String jmngSekretara) {
-		this.jmngSekretara = jmngSekretara;
+	public void setJmbgSekretara(String jmbgSekretara) {
+		this.jmbgSekretara = jmbgSekretara;
 	}
 	
 	
