@@ -9,6 +9,7 @@ import java.util.List;
 
 import com.kud.connection.ConnectionUtil_HikariCP;
 import com.kud.dao.ClanDAO;
+import com.kud.dto.ClanSekcijaDTO;
 import com.kud.enums.PolClana;
 import com.kud.enums.TipSekcije;
 import com.kud.model.Clan;
@@ -201,6 +202,68 @@ public class ClanDAOImpl implements ClanDAO {
  			}
  			}
 		return clan;
+	}
+
+	@Override
+	public boolean changeSection(ClanSekcijaDTO clan, Integer idSekcijaNovi) throws SQLException {
+		String queryDelete = "delete from je where clan_idc = ? and sekcija_ids = ?";
+		String queryInsert = "insert into je (clan_idc, clan_jmbgc, sekcija_ids, sekcija_kud_idkud) values (?, ?, ?, ?)";
+		
+		
+		try (Connection connection = ConnectionUtil_HikariCP.getConnection()){
+			connection.setAutoCommit(false);
+			try (PreparedStatement preparedStatement = connection.prepareStatement(queryDelete)){
+				preparedStatement.setInt(1, clan.getIdClana());
+				preparedStatement.setInt(2, clan.getIdSekcije());
+				
+				preparedStatement.executeUpdate();
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+				connection.rollback();
+				return false;
+			}
+			try (PreparedStatement preparedStatement = connection.prepareStatement(queryInsert)){
+				
+				preparedStatement.setInt(1, clan.getIdClana());
+				preparedStatement.setString(2, clan.getJmbgClana());
+				preparedStatement.setInt(3, idSekcijaNovi);
+				preparedStatement.setInt(4, clan.getIdKuda());
+				
+				preparedStatement.executeUpdate();
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+				connection.rollback();
+				return false;
+			}
+			connection.commit();
+			return true;
+		}
+	}
+
+	@Override
+	public Iterable<ClanSekcijaDTO> findDTOsByIdAndKudId(Integer id, Integer kudId) throws SQLException {
+		String query = "select idc, imec, prezc, jmbgc, ids, nazs, tips, s.kud_idkud from clan c, je j, sekcija s where c.idc = j.clan_idc and j.sekcija_ids = s.ids and idc = ? and s.kud_idkud = ?";
+		ArrayList<ClanSekcijaDTO> list = new ArrayList<ClanSekcijaDTO>();
+		
+		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+				PreparedStatement preparedStatement = connection.prepareStatement(query)){
+			
+			preparedStatement.setInt(1, id);
+			preparedStatement.setInt(2, kudId);
+			
+			try (ResultSet resultSet = preparedStatement.executeQuery()){
+				while (resultSet.next()) {
+					TipSekcije tips;
+					if(resultSet.getString(7).equals("Skolica folklora"))
+						tips = TipSekcije.Skolica_folkolora;
+					else
+						tips = TipSekcije.valueOf(resultSet.getString(7));
+					ClanSekcijaDTO clan = new ClanSekcijaDTO(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), resultSet.getInt(5), resultSet.getString(6), tips, resultSet.getInt(8));
+					list.add(clan);
+				}
+			}
+		}
+		return list;
 	}
 
 }

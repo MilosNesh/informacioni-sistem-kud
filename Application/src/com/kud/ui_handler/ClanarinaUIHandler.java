@@ -30,7 +30,7 @@ public class ClanarinaUIHandler {
 			System.out.println("3 - Prikaz po datumu");
 			System.out.println("4 - Prikazi duznike za tekuci mjesec");
 			System.out.println("5 - Placanje clanarine");
-			System.out.println("X - Izlazak iz rukovanja kudovima");
+			System.out.println("X - Izlazak iz rukovanja clanarinama");
 
 			answer = MainUIHandler.sc.nextLine();
 
@@ -138,16 +138,16 @@ public class ClanarinaUIHandler {
 	
 	private void showAllByDatum() {
 		System.out.println("Unesi mjesec za pretragu clanarina (1, 2, 3...): ");
-		String mjesec = MainUIHandler.sc.nextLine();
+		Integer mjesec = Integer.parseInt(MainUIHandler.sc.nextLine());
 		
 		System.out.println("Unesi godinu za pretragu clanarina: ");
-		String godina = MainUIHandler.sc.nextLine();
+		Integer godina = Integer.parseInt(MainUIHandler.sc.nextLine());
 		
 		System.out.println(ClanarinaDTO.getFormattedHeader());
 		System.out.println("------------------------------------------------------------------------------------------------------------------------");
 
 		try {
-			for(ClanarinaDTO clanarina : clanarinaService.getAllDtoByDatum(godina+"-"+mjesec)) {
+			for(ClanarinaDTO clanarina : clanarinaService.getAllDtoByDatum(mjesec, godina, sekretar.getKud())) {
 				System.out.println(clanarina);
 			}
 		} catch (SQLException e) {
@@ -160,7 +160,7 @@ public class ClanarinaUIHandler {
 		System.out.println("------------------------------------------------------------------------------------------------------------------------");
 
 		try {
-			for(ClanDTO clan : clanarinaService.getDebtors(LocalDate.now().getYear()+"-"+LocalDate.now().getMonthValue())) {
+			for(ClanDTO clan : clanarinaService.getDebtors(LocalDate.now().getMonthValue(), LocalDate.now().getYear(), sekretar.getKud())) {
 				System.out.println(clan);
 			}
 		} catch (SQLException e) {

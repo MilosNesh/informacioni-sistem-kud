@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.kud.connection.ConnectionUtil_HikariCP;
 import com.kud.dao.SekcijaDAO;
@@ -105,6 +106,33 @@ public class SekcijaDAOImpl implements SekcijaDAO{
 			
 		}
 		return sekcija;
+	}
+
+	@Override
+	public Iterable<Sekcija> findAllByKudId(Integer kudId) throws SQLException {
+		String query = "select ids, nazs, tips, kud_idkud from sekcija where kud_idkud = ?";
+		ArrayList<Sekcija> list = new ArrayList<Sekcija>();
+		
+		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+				PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+			
+			preparedStatement.setInt(1, kudId);
+			
+			try (ResultSet resultSet = preparedStatement.executeQuery()) {
+				while (resultSet.next()) {
+
+					TipSekcije tips;
+					if(resultSet.getString(3).equals("Skolica folklora"))
+						tips = TipSekcije.Skolica_folkolora;
+					else
+						tips = TipSekcije.valueOf(resultSet.getString(3));
+					
+					Sekcija sekcija = new Sekcija(resultSet.getInt(1), resultSet.getString(2), tips, resultSet.getInt(4));
+					list.add(sekcija);
+				}
+			}
+		}
+		return list;
 	}
 
 }

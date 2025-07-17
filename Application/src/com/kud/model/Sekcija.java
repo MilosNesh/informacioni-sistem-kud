@@ -52,5 +52,13 @@ public class Sekcija {
 		this.kud = kud;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("%-5d %-50s %-10s", id, naziv, tip.toString());
+	}
+	
+	public static String getFormattedHeader() {
+		return String.format("%-5s %-50s %-10s", "ID", "NAZIV", "TIP");
+	}
 	
 }

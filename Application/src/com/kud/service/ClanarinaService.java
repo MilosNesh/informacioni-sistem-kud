@@ -23,11 +23,11 @@ public class ClanarinaService {
 		return (ArrayList<ClanarinaDTO>) clanarinaDao.findAllDtoByClanId(id);
 	}
 	
-	public ArrayList<ClanarinaDTO> getAllDtoByDatum(String mjesecGodina) throws SQLException {
-		return (ArrayList<ClanarinaDTO>) clanarinaDao.findAllDtoByDatum(mjesecGodina);
+	public ArrayList<ClanarinaDTO> getAllDtoByDatum(Integer mjesec, Integer godina, Integer kudId) throws SQLException {
+		return (ArrayList<ClanarinaDTO>) clanarinaDao.findAllDtoByDatum(mjesec, godina, kudId);
 	}
 	
-	public ArrayList<ClanDTO> getDebtors(String mjesecGodina) throws SQLException {
-		return (ArrayList<ClanDTO>) clanarinaDao.findDebtors(mjesecGodina);
+	public ArrayList<ClanDTO> getDebtors(Integer mjesec, Integer godina, Integer kudId) throws SQLException {
+		return (ArrayList<ClanDTO>) clanarinaDao.findDebtors(mjesec, godina, kudId);
 	}
 }

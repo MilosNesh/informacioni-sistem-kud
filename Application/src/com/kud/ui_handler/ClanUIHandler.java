@@ -3,6 +3,7 @@ package com.kud.ui_handler;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import com.kud.enums.PolClana;
 import com.kud.enums.TipSekcije;
@@ -10,6 +11,7 @@ import com.kud.model.Clan;
 import com.kud.model.Sekcija;
 import com.kud.model.Zaposleni;
 import com.kud.service.*;
+import com.kud.dto.*;
 
 public class ClanUIHandler {
 	private static final ClanService clanService = new ClanService();
@@ -22,14 +24,13 @@ public class ClanUIHandler {
 		login();
 		String answer;
 		do {
-			System.out.println("--------------------------------------------------------------------------------------------------------");
+			System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
 			System.out.println("\nOdaberite opciju za rad nad clanovima:");
 			System.out.println("1 - Prikaz svih");
 			System.out.println("2 - Prikaz po identifikatoru");
 			System.out.println("3 - Prikaz po sekciji");
 			System.out.println("4 - Upis novog clana");
-			System.out.println("5 - Izmena po identifikatoru");
-			System.out.println("6 - Brisanje po identifikatoru");
+			System.out.println("5 - Prelazak u novu sekciju");
 			System.out.println("X - Izlazak iz rukovanja kudovima");
 
 			answer = MainUIHandler.sc.nextLine();
@@ -48,10 +49,7 @@ public class ClanUIHandler {
 				register();
 				break;
 			case "5":
-//				update();
-				break;
-			case "6":
-//				delete();
+				changeSection();
 				break;
 			}
 
@@ -168,6 +166,61 @@ public class ClanUIHandler {
 			else
 				System.out.println("Doslo je do greske prilikom upisa.");
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void changeSection() {		
+		
+		System.out.println("Unesite ID clana koga zelite da prebacite u drugu sekciju: ");
+		Integer id = Integer.parseInt(MainUIHandler.sc.nextLine());
+		ArrayList<ClanSekcijaDTO> clanList = new ArrayList<ClanSekcijaDTO>();
+		try {
+			System.out.println(ClanSekcijaDTO.getFormattedHeader());
+			System.out.println("----------------------------------------------------------------------------------------------------------------------------------");
+
+			clanList = clanService.getDTOsByIdAndKudId(id, zaposleni.getKud());
+			for (ClanSekcijaDTO clan : clanList) {
+				System.out.println(clan);
+			}
+			System.out.println();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	
+		System.out.println("Spisak sekicija u vasem kudu: \n");
+		try {
+			System.out.println(Sekcija.getFormattedHeader());
+			System.out.println("----------------------------------------------------------------------------------------------------------------------------------");
+
+			for (Sekcija sekcija : sekcijaService.getAllByKudId(zaposleni.getKud())) {
+				System.out.println(sekcija);
+			}
+			System.out.println();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Unesite ID stare sekcije koju je clan pohadjao: ");
+		Integer stariId = Integer.parseInt(MainUIHandler.sc.nextLine());
+		
+		System.out.println("Unesite ID nove sekcije u koju zelite da prebacite clana: ");
+		Integer noviId = Integer.parseInt(MainUIHandler.sc.nextLine());
+		
+		try {
+			ClanSekcijaDTO cs = null;
+
+			for(ClanSekcijaDTO c : clanList) {
+				if (c.getIdSekcije() == stariId)
+					cs = c;
+			}
+			boolean updated = clanService.changeSection(cs, noviId);
+			if (updated) {
+				System.out.println("Clan uspjesno prebacen u novu sekciju");
+			}
+			else
+				System.out.println("Doslo je do greske prilikom prebacivanja clana");
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}

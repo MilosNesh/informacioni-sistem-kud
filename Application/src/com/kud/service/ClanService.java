@@ -1,6 +1,7 @@
 package com.kud.service;
 
 import com.kud.dao.impl.ClanDAOImpl;
+import com.kud.dto.ClanSekcijaDTO;
 import com.kud.enums.TipSekcije;
 
 import java.sql.SQLException;
@@ -31,5 +32,13 @@ public class ClanService {
 	
 	public Clan getByIdAndKudId(Integer id, Integer kudId) throws SQLException {
 		return clanDao.findByIdAndKudId(id, kudId);
+	}
+	
+	public ArrayList<ClanSekcijaDTO> getDTOsByIdAndKudId(Integer id, Integer kudId) throws SQLException {
+		return (ArrayList<ClanSekcijaDTO>) clanDao.findDTOsByIdAndKudId(id, kudId);
+	}
+	
+	public boolean changeSection(ClanSekcijaDTO clan, Integer idSekcijaNovi) throws SQLException {
+		return clanDao.changeSection(clan, idSekcijaNovi);
 	}
 }

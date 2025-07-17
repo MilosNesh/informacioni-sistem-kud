@@ -5,6 +5,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.YearMonth;
 import java.util.ArrayList;
 
 import com.kud.connection.ConnectionUtil_HikariCP;
@@ -142,16 +143,17 @@ public class ClanarinaDAOImpl implements ClanarinaDAO {
 	}
 
 	@Override
-	public Iterable<ClanarinaDTO> findAllDtoByDatum(String mjesecGodina) throws SQLException {
-		String query = "select idcl, izncl, datplcl, imec, prezc, s.nazs, idc from clanarina cl, clan c, sekcija s, je j where cl.clan_idc = c.idc and j.clan_idc = c.idc and j.sekcija_ids = s.ids and datplcl between ? and ?";
+	public Iterable<ClanarinaDTO> findAllDtoByDatum(Integer mjesec, Integer godina, Integer kudId) throws SQLException {
+		String query = "select idcl, izncl, datplcl, imec, prezc, s.nazs, idc from clanarina cl, clan c, sekcija s, je j where cl.clan_idc = c.idc and j.clan_idc = c.idc and j.sekcija_ids = s.ids and datplcl between ? and ? and s.kud_idkud = ?";
 		ArrayList<ClanarinaDTO> clanarinaList = new ArrayList<ClanarinaDTO>();
 		
 		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(query)
 				){
 			
-			preparedStatement.setDate(1, Date.valueOf(mjesecGodina+"-01"));
-			preparedStatement.setDate(2, Date.valueOf(mjesecGodina+"-30"));
+			preparedStatement.setDate(1, Date.valueOf(godina+"-"+mjesec+"-01"));
+			preparedStatement.setDate(2, Date.valueOf(godina+"-"+mjesec+"-"+YearMonth.of(godina, mjesec).lengthOfMonth()));
+			preparedStatement.setInt(3, kudId);
 			
 			try (ResultSet resultSet = preparedStatement.executeQuery()){				
 				while(resultSet.next()) {				
@@ -165,16 +167,17 @@ public class ClanarinaDAOImpl implements ClanarinaDAO {
 	}
 
 	@Override
-	public Iterable<ClanDTO> findDebtors(String mjesecGodina) throws SQLException {
-		String query = "select distinct idc, imec, prezc, nazs from clanarina cl, clan c, je j, sekcija s where cl.clan_idc = c.idc and j.clan_idc = c.idc and j.sekcija_ids = s.ids and c.idc not in (select distinct clan_idc from clanarina where datplcl between ? and ?) order by idc";
+	public Iterable<ClanDTO> findDebtors(Integer mjesec, Integer godina, Integer kudId) throws SQLException {
+		String query = "select distinct idc, imec, prezc, nazs from clan c, je j, sekcija s where j.clan_idc = c.idc and j.sekcija_ids = s.ids and c.idc not in (select distinct clan_idc from clanarina where datplcl between ? and ?) and c.idc in (select idc from clan c, je j where c.idc = j.clan_idc and j.sekcija_kud_idkud = ?) order by idc";
 		ArrayList<ClanDTO> clanList = new ArrayList<ClanDTO>();
 		
 		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(query)
 				){
 			
-			preparedStatement.setDate(1, Date.valueOf(mjesecGodina+"-01"));
-			preparedStatement.setDate(2, Date.valueOf(mjesecGodina+"-30"));
+			preparedStatement.setDate(1, Date.valueOf(godina+"-"+mjesec+"-01"));
+			preparedStatement.setDate(2, Date.valueOf(godina+"-"+mjesec+"-"+YearMonth.of(godina, mjesec).lengthOfMonth()));
+			preparedStatement.setInt(3, kudId);
 			
 			try (ResultSet resultSet = preparedStatement.executeQuery()){				
 				while(resultSet.next()) {				
